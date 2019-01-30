@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>立即购买</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../dist/css/laydate.css">
+</head>
+<body>
+    <header></header>
+
+        <div class="buy-wrapper w1200">
+            <div class="buy-title">填写订单</div>
+            <div class="orderMenu">
+                <p class="title">订单目录</p>
+                <div class="orderMenu-content clearfix">
+                    <ul class="lft">
+                       <li>所在城市</li>
+                       <li>保单金额</li>
+                       <li>项目名称及标段</li>
+                       <li>投标日期</li>
+                       <li>被保险企业名称</li>
+                       <li>经办人姓名</li>
+                       <li>经办人手机号码</li>
+                       <li>经办人收件地址</li>
+                       <li>订单金额</li>
+                    </ul>
+                    <div class="rgt">
+                        <form action="">
+                            <div class="szcs lis">
+                                <select name="province" id="province">
+                                    <option value="">选择省</option>
+                                    <option value="">内蒙古自治区</option>
+                                </select>
+                                <select name="city" id="city">
+                                    <option value="">选择市</option>
+                                    <option value="">呼和浩特</option>
+                                </select>
+                                <select name="area" id="area">
+                                    <option value="">选择区</option>
+                                    <option value="">赛罕区</option>
+                                </select>
+                            </div>
+                            <div class="bdje lis">
+                                <input type="text">(万元)
+                            </div>
+                            <div class="xmmc lis">
+                                <input type="text">
+                            </div>
+                            <div class="tbrq lis laydate-box">
+                                <input type="text" id="laydateInput" placeholder="请选择投标日期">
+                                <img src="../dist/calendar.png" alt="" class="icon data-icon"/>
+                                <div class="select-date">
+                                    <div class="select-date-header">
+                                        <ul class="heade-ul">
+                                            <li class="header-item header-item-one">
+                                                <select name="" id="yearList"></select>
+                                            </li>
+                                            <li class="header-item header-item-two" onselectstart="return false">
+                                                <select name="" id="monthList"></select>
+                                            </li>
+                                            <li class="header-item header-item-three" onselectstart="return false" >
+                                                <span class="reback">回到今天</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="select-date-body">
+                                        <ul class="week-list">
+                                            <li>日</li><li>一</li><li>二</li><li>三</li><li>四</li><li>五</li><li>六</li>
+                                        </ul>
+                                        <ul class="day-tabel"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bbx lis">
+                                <select name="" id="">
+                                    <option value="">内蒙古凯创全过程工程咨询有限责任公司</option>
+                                </select>
+                            </div>
+                            <div class="jbrname lis">
+                                <input type="text">
+                            </div>
+                            <div class="jbrtel lis">
+                                <input type="text">
+                            </div>
+                            <div class="jbradress lis">
+                                <input type="text">
+                            </div>
+                            <div class="ddje lis">
+                                <span class="moneyIcon">¥</span><input type="text">(大写)<br>
+                                <p class="notice">（注意：该金额为参考支付金额，具体支付金额以保险公司审核结算为准！）</p>
+                            </div>
+
+                            <div class="btn-box">
+                                <input type="btn" value="提交订单" class="submitBtn" onclick="location.href='information.html'">
+                                <input type="btn" value="返回" class="return" onclick="javascript:history.back(-1);">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer></footer>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../dist/js/laydate.js"></script>
+<script src="../js/common.js"></script>
+<script>
+    function getSelectDate(result){
+        //这里获取选择的日期
+        console.log(result);
+    }
+</script>
+</body>
+</html>

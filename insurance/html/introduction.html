@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>平台简介</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/zoom.js"></script> <!--图片放大-->
+</head>
+<body style="background: #f4f4f4;">
+    <header></header>
+
+    <div class="content introduction-wrapper">
+        <p class="currentLocation w1200">当前位置：首页 > 平台简介</p>
+
+        <div class="bg"></div>
+
+        <div class="nav-wrapper">
+            <div class="nav w1200">
+                <p class="choose">平台简介</p>
+                <p>平台荣誉</p>
+            </div>
+        </div>
+        <div class="introduction-container w1200">
+            <div class="title-color">
+                <h1>平台简介</h1>
+                <div class="title-en"><i class="lft"></i>INTRODUCTION<i class="rgt"></i></div>
+            </div>
+            <div class="content-wrapper">
+                <h1>平台简介</h1>
+                <div class="content">
+                    <div class="content-rgt">
+                        <p class="title">平台简介</p>
+                        <div class="msg">
+                            内蒙古凯创全过程工程咨询有限公司，是一家专注于建设工程保证保险领域的互联网保险科技平台，旗下拥有保险与担保网平台，是内蒙第一家互联网+工程+保险的创新服务平台,真正地实现全方位保前保后一站式服务。<br>
+                            保险与担保网以云计算为基础，搭建SaaS云服务系统，结合 大数据、人工智能、区块链等新兴技术，以分布式高可用的微服务架构为指导思想，实现弹性扩展，功能齐全、高效互动的信息系统群，实现科技赋能保险的运营全流程。<br>
+                            保险与担保网目前已与人保财险、太保财险、中华财险、大地保险、天安财险等多家保险公司实现了工程履约类业务系统对接，完成了工程投标保证保险、履约保证保险、民工支付保证保险、质量保证保险等多险种的在线投保、审核、支付、出单全流程服务，同时结合专业、智能的保后服务，实现风险监控全流程。<br>
+                            保险与担保网未来将建立多维度分布式数据库，搭建互联网微服务系统架构，对工保各类业务中的数据进行全方位、全生命周期、任意维度的快速分析展示，为建筑企业、保险公司、政府监管提供强有力的数据支持。<br>
+                            以“创新、专注、协调、共享”为企业发展理念，充分利用“互联网+”效应，提升平台服务质量和投保效率；积极践行建筑领域“全域保险”发展理念，打造建设工程保险“全产业链”，通过保险+服务+科技，实现跨界与融合，推动建筑产业提质增效，形成保险业与建筑产业的和谐发展。<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper" style="display:none;">
+                <ul class="ptry">
+                    <li><img src="../img/product_1.png" alt="" class="smallimg"></li>
+                    <li><img src="../img/product_1.png" alt="" class="smallimg"></li>
+                    <li><img src="../img/product_1.png" alt="" class="smallimg"></li>
+                    <li><img src="../img/product_1.png" alt="" class="smallimg"></li>
+                    <li><img src="../img/product_1.png" alt="" class="smallimg"></li>
+                    <li><img src="../img/product_1.png" alt="" class="smallimg"></li>
+                </ul>
+                <img src="" alt="" class="bigimg">
+                <div class="mask">
+                    <!--<img src="img/close.png" alt="">-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer></footer>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    $(function(){
+        /*
+         smallimg   // 小图
+         bigimg  //点击放大的图片
+         mask   //黑色遮罩
+         */
+        var obj = new zoom('mask', 'bigimg','smallimg');
+        obj.init();
+    })
+</script>
+</body>
+</html>

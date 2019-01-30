@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻详情</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body style="background: #f4f4f4;">
+    <header></header>
+
+    <div class="content newsDetail-wrapper">
+        <p class="currentLocation w1200" style="margin: 25px auto;">新闻中心 > <span class="name">平台3A荣誉</span></p>
+
+        <div class="bg swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../img/newsdetail-bg.png" alt=""></div>
+                <div class="swiper-slide"><img src="../img/newsdetail-bg2.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="news-container w1200 clearfix">
+            <div class="lft">
+                <div class="newTitle-wrapper">
+                    <h1 class="title">平台3A荣誉</h1>
+                    <p class="time">2019-01-01</p>
+                    <div class="tag-box">
+                        <p class="tag">协会   /   凯创   /    3A荣誉</p>
+                        <p class="visited"><i></i><span>2390</span></p>
+                    </div>
+                </div>
+                <div class="news-content">
+                    <p>在意大利科摩湖边风景秀丽的高卢别墅区，来自设计行业、媒体和政治领域的300多位国际嘉宾共同庆...</p>
+                    <img src="../img/newsdetail-bg2.png" alt="">
+                    <p>在意大利科摩湖边风景秀丽的高卢别墅区，来自设计行业、媒体和政治领域的300多位国际嘉宾共同庆祝了A‘ Design颁奖盛典。</p>
+                    <p>东道一举获得11项A’ Design大奖，这充分证明了我们有能力以我们创新、独特的设计和理念角逐于开放公平的比赛中。我们借参加A' Design 盛典之夜的机会，庆祝我们的成就。如今，庆典盛况已被全世界的媒体广为传播。</p>
+                    <p>A' Design是一年一度的设计评选盛会，它旨在为全世界最优异的设计师，建筑师，工程师，设计团队，品牌，以及设计公司提升曝光率，名气，以及赞誉。</p>
+                    <p>A' Design是一年一度的设计评选盛会，它旨在为全世界最优异的设计师，建筑师，工程师，设计团队，品牌，以及设计公司提升曝光率，名气，以及赞誉。</p>
+                    <p>A' Design是一年一度的设计评选盛会，它旨在为全世界最优异的设计师，建筑师，工程师，设计团队，品牌，以及设计公司提升曝光率，名气，以及赞誉。</p>
+                    <p>A' Design是一年一度的设计评选盛会，它旨在为全世界最优异的设计师，建筑师，工程师，设计团队，品牌，以及设计公司提升曝光率，名气，以及赞誉。</p>
+                    <p>A' Design是一年一度的设计评选盛会，它旨在为全世界最优异的设计师，建筑师，工程师，设计团队，品牌，以及设计公司提升曝光率，名气，以及赞誉。</p>
+                    <p>A' Design是一年一度的设计评选盛会，它旨在为全世界最优异的设计师，建筑师，工程师，设计团队，品牌，以及设计公司提升曝光率，名气，以及赞誉。</p>
+                </div>
+                <p class="readMore">展开阅读全文</p>
+            </div>
+            <div class="rgt">
+                <p>Hi,对本主题感兴趣不妨聊聊</p>
+                <p>专家在线：周一至周五 09:00-18:00</p>
+                <p class="lxfs">QQ:1234567891</p>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: true
+    });
+
+    //展开阅读全文
+    $(function(){
+        var slideHeight = 800; // px
+        var defHeight = $('.news-content').height();
+        if(defHeight >= slideHeight){
+            $('.news-content').css('height' , slideHeight + 'px');
+            $('.readMore').html('展开阅读全文');
+            $('.readMore').click(function(){
+                var curHeight = $('.news-content').height();
+                if(curHeight == slideHeight){
+                    $('.news-content').animate({
+                        height: defHeight
+                    }, "normal");
+                    $('.readMore').html('点击隐藏');
+                }else{
+                    $('.news-content').animate({
+                        height: slideHeight
+                    }, "normal");
+                    $('.readMore').html('展开阅读全文');
+                }
+                return false;
+            });
+        }
+    });
+</script>
+</body>
+</html>

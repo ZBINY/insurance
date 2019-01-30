@@ -1,0 +1,46 @@
+/*完善资料提示框*/
+.I-alertbox-wrapper{
+    position: absolute;
+    top: 32px;
+    right: 128px
+}
+.I-alertbox,.I-alertbox2{
+    padding: 10px;
+    width: 282px;
+    color: #009fe2;
+    font-size: 12px;
+    background: #d9d9d9;
+    border-radius: 5px;
+}
+.I-alertbox li{
+    line-height: 37px;
+}
+.I-alertbox li .name{
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+}
+.I-alertbox li .valuetxt{
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+}
+.I-alertbox li .return,.I-alertbox2 .return{
+    display: block;
+    margin: 0 auto;
+    width: 65px;
+    height: 35px;
+    color: #fff;
+    background: #07902a;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.I-alertbox2{
+    background: #fff;
+}
+.I-alertbox2 p{
+    color: #0068b7;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: left;
+}
